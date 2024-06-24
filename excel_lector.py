@@ -26,19 +26,19 @@ class ExcelDataViewer(tk.Frame):
         image_label.image = photo  
         image_label.pack()
 
-        search_frame = ttk.LabelFrame(self, text="Recherche")
+        search_frame = ttk.LabelFrame(self, text="Search")
         search_frame.pack(fill=tk.X, padx=10, pady=5)
 
-        search_label = ttk.Label(search_frame, text="Recherche : ")
+        search_label = ttk.Label(search_frame, text="Search : ")
         search_label.pack(side=tk.LEFT, padx=5, pady=5)
 
         self.search_entry = ttk.Entry(search_frame)
         self.search_entry.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=5, pady=5)
 
-        search_button = ttk.Button(search_frame, text="Rechercher", command=self.search_data)
+        search_button = ttk.Button(search_frame, text="Search", command=self.search_data)
         search_button.pack(side=tk.LEFT, padx=5, pady=5)
 
-        data_frame = ttk.LabelFrame(self, text="Données")
+        data_frame = ttk.LabelFrame(self, text="Data")
         data_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
 
         self.data_display = ttk.Treeview(data_frame, show='headings')
